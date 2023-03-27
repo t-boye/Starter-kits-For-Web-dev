@@ -1,0 +1,30 @@
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+ This tag helps ensure that the website is properly scaled for different screen sizes, making it mobile-friendly.
+
+
+<meta http-equiv="X-UA-Compatible" content="ie=edge"> 
+This tag is used to specify which version of Internet Explorer should be used to render the webpage. This can help ensure that your website looks consistent across different browsers.
+
+
+<meta name="theme-color" content="#000000">
+ This tag sets the color of the address bar on mobile devices.
+
+<meta name="format-detection" content="telephone=no">
+ This tag disables automatic detection of phone numbers on your website, which can be useful if you don't want phone numbers to be clickable.
+
+
+<meta name="referrer" content="no-referrer-when-downgrade">
+ This tag controls how much referrer information is passed when a user clicks on a link on your website.
+
+<meta name="apple-mobile-web-app-capable" content="yes">
+ This tag makes your website capable of running as a standalone app on iOS devices.
+
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+ This tag controls the appearance of the status bar on iOS devices when your website is run as a standalone app.
+
+Remember to use these tags appropriately and make sure they are relevant to your website's content and purpose.
+
+
+
+
+
