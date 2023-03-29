@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css?family=Nunito:400,600,700|Roboto:300,400,500,700');
+body {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+body.loaded {
+    overflow-y: auto;
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 100000000;
+}
+
+.overlayDoor:before,
+.overlayDoor:after {
+    content: "";
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    background: #111;
+    transition: .5s cubic-bezier(.77, 0, .18, 1);
+    transition-delay: .8s;
+}
+
+.overlayDoor:before {
+    left: 0;
+}
+
+.overlayDoor:after {
+    right: 0;
+}
+
+body.loaded .overlayDoor:before {
+    left: -50%;
+}
+
+body.loaded .overlayDoor:after {
+    right: -50%;
+}
+
+body.loaded .overlayContent {
+    opacity: 0;
+    margin-top: -15px;
+}
+
+.overlayContent {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    transition: .5s cubic-bezier(.77, 0, .18, 1);
+}
+
+.skip {
+    display: block;
+    width: 130px;
+    text-align: center;
+    margin: 50px auto 0;
+    cursor: pointer;
+    color: #fff;
+    font-family: 'Nunito';
+    font-weight: 700;
+    padding: 12px 0;
+    border: 2px solid #fff;
+    border-radius: 3px;
+    transition: 0.2s ease;
+}
+
+&:hover {
+    background: #ddd;
+    color: #444;
+    border-color: #ddd;
+}
+
+.loader {
+    width: 128px;
+    height: 128px;
+    border: 3px solid #fff;
+    border-bottom: 3px solid transparent;
+    border-radius: 50%;
+    position: relative;
+    animation: spin 1s linear infinite;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.inner {
+    width: 64px;
+    height: 64px;
+    border: 3px solid transparent;
+    border-top: 3px solid #fff;
+    border-radius: 50%;
+    animation: spinInner 1s linear infinite;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes spinInner {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(-720deg);
+    }
+}
+
+.header {
+    background: url('https://picsum.photos/4096/2160?random=1') center/cover;
+    background-size: cover;
+    height: 100vh;
+}
+
+.darken {
+    background: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+span {
+    font-size: 12px;
+    top: -10px;
+    position: relative;
+}
+
+.vid {
+    padding-left: 370px;
+    padding-top: 200px;
+}
