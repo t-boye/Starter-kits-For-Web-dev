@@ -1,0 +1,42 @@
+.navbar {
+    background-color: #333;
+}
+
+.navbar-brand {
+    font-weight: bold;
+    font-size: 24px;
+    margin-left: 140px;
+    margin-right: 270px;
+}
+
+#navbarNav {
+    margin-left: 499px;
+}
+
+.navbar-nav .nav-link {
+    font-size: 18px;
+    margin-right: 20px;
+}
+
+.navbar-nav .nav-link:hover {
+    color: rgb(199, 208, 255);
+}
+
+.form-control {
+    border-color: rgb(168, 200, 252);
+}
+
+.btn-outline-light {
+    border-color: rgb(174, 192, 254);
+    color: #fff;
+}
+
+.btn-outline-light:hover {
+    background-color: rgb(108, 158, 235);
+    color: #333;
+}
+
+#searchBar {
+    padding-top: 10px;
+    ;
+}
