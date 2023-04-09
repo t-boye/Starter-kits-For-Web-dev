@@ -9,34 +9,31 @@
     margin-right: 270px;
 }
 
-#navbarNav {
-    margin-left: 499px;
-}
-
-.navbar-nav .nav-link {
-    font-size: 18px;
-    margin-right: 20px;
-}
-
-.navbar-nav .nav-link:hover {
-    color: rgb(199, 208, 255);
-}
-
-.form-control {
-    border-color: rgb(168, 200, 252);
-}
-
-.btn-outline-light {
-    border-color: rgb(174, 192, 254);
-    color: #fff;
-}
-
-.btn-outline-light:hover {
-    background-color: rgb(108, 158, 235);
-    color: #333;
-}
-
-#searchBar {
-    padding-top: 10px;
-    ;
-}
+/* Custom CSS for Navbar */
+.navbar {
+    background-color: #343a40; /* Set the background color for the navbar */
+  }
+  
+  .navbar-brand {
+    font-size: 24px; /* Set the font size for the navbar brand */
+  }
+  
+  .navbar-nav .nav-item {
+    margin-right: 10px; /* Add margin between each nav item */
+  }
+  
+  .navbar-nav .nav-link {
+    color: #fff; /* Set the color for the navbar links */
+  }
+  
+  .navbar-toggler {
+    border: none; /* Remove the border from the navbar toggler */
+  }
+  
+  #searchBar input[type="search"] {
+    width: 200px; /* Set the width for the search input field */
+  }
+  
+  #searchBar .btn {
+    margin-left: 10px; /* Add margin between the search input field and search button */
+  }
