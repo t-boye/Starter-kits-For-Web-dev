@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html no-js lang="en">
+<head>
+<!--Metadata goes here-->
+
+<!--Your css or Other links can vbe here too-->
+
+<!-- Include Swiper library -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/6.5.3/swiper-bundle.min.css" />
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/6.5.3/swiper-bundle.min.js"></script>
+</head>
+
+<body>
+
+<!-- Swiper -->
+<div class="swiper-container">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide">
+        <img src="asserts\works-pics\pic-1.jpg" alt="Slide 1" style="max-width:70%; height:300px;">
+      </div>
+      <div class="swiper-slide">
+        <img src="asserts\works-pics\pic-2.jpg" alt="Slide 2" style="max-width:70%; height:300px;">
+      </div>
+      <div class="swiper-slide">
+        <img src="asserts\works-pics\pic-3.jpg" alt="Slide 3" style="max-width:70%; height:300px;">
+      </div>
+      <div class="swiper-slide">
+        <img src="asserts\works-pics\pic-4.jpg" alt="Slide 4" style="max-width:70%; height: 300px;">
+      </div>
+      <div class="swiper-slide">
+        <img src="asserts\works-pics\pic-5.jpg" alt="Slide 5" style="max-width:70%; height: 300px;">
+      </div>
+      <!-- Add more slides as needed -->
+    </div>
+    <!-- Add Pagination -->
+    <div class="swiper-pagination"></div>
+    <!-- Add Navigation -->
+    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
+  </div>
+<!-- Initialize Swiper with autoplay option -->
+<script>
+  var swiper = new Swiper('.swiper-container', {
+    slidesPerView: 1,
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+    pagination: {
+      el: '.swiper-pagination',
+      clickable: true,
+    },
+    autoplay: {
+      delay: 5000, // Set the delay between slides in milliseconds (e.g. 5000 = 5 seconds)
+      disableOnInteraction: false, // Set to false to keep autoplaying even when user interacts with the slider
+    },
+  });
+</script>
+
+</body>
+</html>
